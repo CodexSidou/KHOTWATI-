@@ -79,21 +79,19 @@ export const Navbar: React.FC = () => {
         {/* Logo and Tagline */}
         <div
           onClick={() => navigateTo(user ? 'dashboard' : 'landing')}
-          style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', cursor: 'pointer' }}
+          style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', cursor: 'pointer' }}
         >
-          <div style={{
-            background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-blue))',
-            width: 38,
-            height: 38,
-            borderRadius: '10px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#fff',
-            boxShadow: 'var(--shadow-glow-cyan)'
-          }}>
-            <Compass size={22} />
-          </div>
+          <img
+            src="./logo.png"
+            alt="KHOTWATI Logo"
+            style={{
+              width: 40,
+              height: 40,
+              borderRadius: '50%',
+              boxShadow: '0 0 15px rgba(6, 182, 212, 0.4)',
+              objectFit: 'cover'
+            }}
+          />
           <div>
             <div style={{ fontWeight: 800, fontSize: '1.15rem', color: 'var(--text-primary)', lineHeight: 1.1 }}>
               {t.appName}

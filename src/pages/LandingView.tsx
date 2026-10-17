@@ -25,6 +25,22 @@ export const LandingView: React.FC = () => {
     <div style={{ maxWidth: 960, margin: '0 auto', paddingTop: '1.5rem' }}>
       {/* Hero Section */}
       <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <img
+            src="./logo.png"
+            alt="KHOTWATI | خطوتي"
+            style={{
+              width: 140,
+              height: 140,
+              borderRadius: '50%',
+              boxShadow: '0 0 35px rgba(6, 182, 212, 0.45)',
+              border: '2px solid rgba(6, 182, 212, 0.5)',
+              objectFit: 'cover',
+              animation: 'slideUp 0.6s ease'
+            }}
+          />
+        </div>
+
         <div style={{
           display: 'inline-flex',
           alignItems: 'center',
